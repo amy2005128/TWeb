@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cehia - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;      
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>Cehia — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<div class="row">
+<ul class="lista">
+
+<li>
+<a href="./aeroport_praga.html">
+<span class="nume">
+<span class="icon">✈</span> Prague
+</span>
+<span class="cod">PRG</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_brno.html">
+<span class="nume">
+<span class="icon">✈</span> Brno
+</span>
+<span class="cod">BRQ</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_ostrava.html">
+<span class="nume">
+<span class="icon">✈</span> Ostrava
+</span>
+<span class="cod">OSR</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_karlovy_vary.html">
+<span class="nume">
+<span class="icon">✈</span> Karlovy Vary
+</span>
+<span class="cod">KLV</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_pardubice.html">
+<span class="nume">
+<span class="icon">✈</span> Pardubice
+</span>
+<span class="cod">PED</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_kunovice.html">
+<span class="nume">
+<span class="icon">✈</span> Kunovice
+</span>
+<span class="cod">UHE</span>
+</a>
+</li>
+
+</ul>
+
+<img src="../images/image_cehia.png" class="harta" usemap="#cehia-map" alt="Harta Cehia">
+</div>
+
+<map name="cehia-map" id="map">
+
+<area alt="Praga" title="Praga"
+href="./aeroport_praga.html"
+coords="593,372,44" shape="circle">
+
+<area alt="Brno" title="Brno"
+href="./aeroport_brno.html"
+coords="838,515,41" shape="circle">
+
+<area alt="Ostrava" title="Ostrava"
+href="./aeroport_ostrava.html"
+coords="1078,373,44" shape="circle">
+
+<area alt="Karlovy Vary" title="Karlovy Vary"
+href="./aeroport_karlovy_vary.html"
+coords="418,294,43" shape="circle">
+
+<area alt="Pardubice" title="Pardubice"
+href="./aeroport_pardubice.html"
+coords="802,347,43" shape="circle">
+
+<area alt="Kunovice" title="Kunovice"
+href="./aeroport_kunovice.html"
+coords="998,548,41" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+</body>
+</html>

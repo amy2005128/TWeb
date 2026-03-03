@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ucraina - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>Ucraina — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<div class="row">
+<ul class="lista">
+
+<li>
+<a href="aeroport_kyiv.html">
+<span class="nume">
+<span class="icon">✈</span> Kyiv
+</span>
+<span class="cod">IEV</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_lviv.html">
+<span class="nume">
+<span class="icon">✈</span> Lviv
+</span>
+<span class="cod">LWO</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_kharkiv.html">
+<span class="nume">
+<span class="icon">✈</span> Kharkiv
+</span>
+<span class="cod">HRK</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_dnipro.html">
+<span class="nume">
+<span class="icon">✈</span> Dnipro
+</span>
+<span class="cod">DNK</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_odesa.html">
+<span class="nume">
+<span class="icon">✈</span> Odesa
+</span>
+<span class="cod">ODS</span>
+</a>
+</li>
+
+</ul>
+
+<img src="../images/image_ucraina.png" class="harta" usemap="#ua-map">
+</div>
+
+<map name="ua-map">
+
+<area href="aeroport_lviv.html" coords="330,306,40" shape="circle">
+<area href="aeroport_kyiv.html" coords="671,270,40" shape="circle">
+<area href="aeroport_kharkiv.html" coords="878,306,40" shape="circle">
+<area href="aeroport_dnipro.html" coords="818,445,45" shape="circle">
+<area href="aeroport_odesa.html" coords="658,525,43" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Marea Britanie - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>Marea Britanie — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<div class="row">
+<ul class="lista">
+
+<li>
+<a href="aeroport_londra_gatwick.html">
+<span class="nume">
+<span class="icon">✈</span> London
+</span>
+<span class="cod">LGW</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_manchester.html">
+<span class="nume">
+<span class="icon">✈</span> Manchester
+</span>
+<span class="cod">MAN</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_liverpool.html">
+<span class="nume">
+<span class="icon">✈</span> Liverpool
+</span>
+<span class="cod">LPL</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_bristol.html">
+<span class="nume">
+<span class="icon">✈</span> Bristol
+</span>
+<span class="cod">BRS</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_glasgow.html">
+<span class="nume">
+<span class="icon">✈</span> Glasgow
+</span>
+<span class="cod">GLA</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_edinburgh.html">
+<span class="nume">
+<span class="icon">✈</span> Edinburgh
+</span>
+<span class="cod">EDI</span>
+</a>
+</li>
+
+</ul>
+
+<img src="../images/image_mareabritanie.png" class="harta" usemap="#uk-map">
+</div>
+
+<map name="uk-map">
+
+<area href="aeroport_londra_gatwick.html" coords="915,670,40" shape="circle">
+<area href="aeroport_manchester.html" coords="822,512,43" shape="circle">
+<area href="aeroport_liverpool.html" coords="742,477,39" shape="circle">
+<area href="aeroport_bristol.html" coords="762,653,40" shape="circle">
+<area href="aeroport_glasgow.html" coords="662,349,43" shape="circle">
+<area href="aeroport_edinburgh.html" coords="749,281,40" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+</body>
+</html>
