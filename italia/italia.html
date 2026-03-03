@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italia - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;    
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Italia — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="./aeroport_milan.html">Milan (LIN)</a></li>
+  <li><a href="./aeroport_venice.html">Venice (VCE)</a></li>
+  <li><a href="./aeroport_bologna.html">Bologna (BLQ)</a></li>
+  <li><a href="./aeroport_rome.html">Rome (FCO)</a></li>
+  <li><a href="./aeroport_naples.html">Naples (NAP)</a></li>
+  <li><a href="./aeroport_catania.html">Catania (CTA)</a></li>
+</ul>
+
+<img src="../images/image_italia.png" class="harta" usemap="#italia-map" alt="Harta Italia">
+
+<map name="italia-map" id="map">
+
+<area alt="Milan" title="Milan"
+href="./aeroport_milan.html"
+coords="560,180,47" shape="circle">
+
+<area alt="Venice" title="Venice"
+href="./aeroport_venice.html"
+coords="725,162,42" shape="circle">
+
+<area alt="Bologna" title="Bologna"
+href="./aeroport_bologna.html"
+coords="694,296,39" shape="circle">
+
+<area alt="Rome" title="Rome"
+href="./aeroport_rome.html"
+coords="720,433,41" shape="circle">
+
+<area alt="Naples" title="Naples"
+href="./aeroport_naples.html"
+coords="820,492,41" shape="circle">
+
+<area alt="Catania" title="Catania"
+href="./aeroport_catania.html"
+coords="854,707,44" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+</body>
+</html>

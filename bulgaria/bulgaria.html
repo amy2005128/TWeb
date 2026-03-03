@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bulgaria - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px; 
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Bulgaria — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="./aeroport_sofia.html">Sofia (SOF)</a></li>
+  <li><a href="./aeroport_plovdiv.html">Plovdiv (PDV)</a></li>
+  <li><a href="./aeroport_varna.html">Varna (VAR)</a></li>
+  <li><a href="./aeroport_burgas.html">Burgas (BOJ)</a></li>
+  <li><a href="./aeroport_gorna.html">Gorna (GOZ)</a></li>
+</ul>
+
+<img src="../images/image_bulgaria.png" class="harta" usemap="#bulgaria-map" alt="Harta Bulgaria">
+
+<map name="bulgaria-map" id="map">
+
+<area alt="Sofia" title="Sofia"
+href="./aeroport_sofia.html"
+coords="423,424,42" shape="circle">
+
+<area alt="Plovdiv" title="Plovdiv"
+href="./aeroport_plovdiv.html"
+coords="603,535,42" shape="circle">
+
+<area alt="Varna" title="Varna"
+href="./aeroport_varna.html"
+coords="1039,376,41" shape="circle">
+
+<area alt="Burgas" title="Burgas"
+href="./aeroport_burgas.html"
+coords="997,509,42" shape="circle">
+
+<area alt="Gorna" title="Gorna"
+href="./aeroport_gorna.html"
+coords="730,397,40" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+</body>
+</html>

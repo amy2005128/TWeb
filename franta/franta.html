@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franța - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;      
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Franța — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="./aeroport_paris_orly.html">Paris Orly (ORY)</a></li>
+  <li><a href="./aeroport_nice.html">Nice (NCE)</a></li>
+  <li><a href="./aeroport_lyon.html">Lyon (LYS)</a></li>
+  <li><a href="./aeroport_marseille.html">Marseille (MRS)</a></li>
+  <li><a href="./aeroport_toulouse.html">Toulouse (TLS)</a></li>
+  <li><a href="./aeroport_bordeaux.html">Bordeaux (BOD)</a></li>
+</ul>
+
+<img src="../images/image_franta.png" class="harta" usemap="#franta-map" alt="Harta Franța">
+
+<map name="franta-map" id="map">
+
+<area alt="Paris Orly" title="Paris Orly"
+href="./aeroport_paris_orly.html"
+coords="605,242,46" shape="circle">
+
+<area alt="Nice" title="Nice"
+href="./aeroport_nice.html"
+coords="917,565,40" shape="circle">
+
+<area alt="Lyon" title="Lyon"
+href="./aeroport_lyon.html"
+coords="789,434,42" shape="circle">
+
+<area alt="Marseille" title="Marseille"
+href="./aeroport_marseille.html"
+coords="802,601,40" shape="circle">
+
+<area alt="Toulouse" title="Toulouse"
+href="./aeroport_toulouse.html"
+coords="630,598,44" shape="circle">
+
+<area alt="Bordeaux" title="Bordeaux"
+href="./aeroport_bordeaux.html"
+coords="505,487,43" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+</body>
+</html>

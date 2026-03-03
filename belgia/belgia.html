@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belgia - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;     
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Belgia — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="./aeroport_brussels.html">Brussels (BRU)</a></li>
+  <li><a href="./aeroport_charleroi.html">Charleroi (CRL)</a></li>
+  <li><a href="./aeroport_antwerp.html">Antwerp (ANR)</a></li>
+  <li><a href="./aeroport_liege.html">Liege (LGG)</a></li>
+</ul>
+
+<img src="../images/image_belgia.png" class="harta" usemap="#belgia-map" alt="Harta Belgia">
+
+<map name="belgia-map" id="map">
+  <area alt="Brussels" title="Brussels"
+  href="./aeroport_brussels.html"
+  coords="787,397,44" shape="circle">
+
+  <area alt="Charleroi" title="Charleroi"
+  href="./aeroport_charleroi.html"
+  coords="881,557,42" shape="circle">
+
+  <area alt="Antwerp" title="Antwerp"
+  href="./aeroport_antwerp.html"
+  coords="771,231,41" shape="circle">
+
+  <area alt="Liege" title="Liege"
+  href="./aeroport_liege.html"
+  coords="987,398,41" shape="circle">
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+</body>
+</html>

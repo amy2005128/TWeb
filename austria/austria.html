@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Austria - Aeroporturi</title>
+
+<style>
+  body{font-family:Arial, sans-serif; margin:20px;}
+  .harta{width:600px; max-width:100%; height:auto; display:block;}
+</style>
+</head>
+
+<body>
+
+<h1>Austria — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="./aeroport_viena.html">Vienna (VIE)</a></li>
+  <li><a href="./aeroport_salzburg.html">Salzburg (SZG)</a></li>
+  <li><a href="./aeroport_graz.html">Graz (GRZ)</a></li>
+  <li><a href="./aeroport_linz.html">Linz (LNZ)</a></li>
+  <li><a href="./aeroport_innsbruck.html">Innsbruck (INN)</a></li>
+</ul>
+
+<img src="../images/image_austria.png" class="harta" usemap="#austria-map" alt="Harta Austria">
+
+<map name="austria-map" id="map">
+  <area alt="Vienna (VIE)" title="Vienna (VIE)" href="./aeroport_viena.html" coords="1205,371,39" shape="circle">
+  <area alt="Graz (GRZ)" title="Graz (GRZ)" href="./aeroport_graz.html" coords="1105,629,41" shape="circle">
+  <area alt="Salzburg (SZG)" title="Salzburg (SZG)" href="./aeroport_salzburg.html" coords="735,465,39" shape="circle">
+  <area alt="Linz (LNZ)" title="Linz (LNZ)" href="./aeroport_linz.html" coords="883,322,40" shape="circle">
+  <area alt="Innsbruck (INN)" title="Innsbruck (INN)" href="./aeroport_innsbruck.html" coords="534,550,39" shape="circle">
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    if (typeof imageMapResize === "function") {
+      imageMapResize(document.getElementById('map'));
+    }
+  });
+</script>
+
+</body>
+</html>

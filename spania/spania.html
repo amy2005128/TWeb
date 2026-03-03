@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Spania - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Spania — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="aeroport_madrid.html">Madrid (MAD)</a></li>
+  <li><a href="aeroport_barcelona.html">Barcelona (BCN)</a></li>
+  <li><a href="aeroport_valencia.html">Valencia (VLC)</a></li>
+  <li><a href="aeroport_alicante.html">Alicante (ALC)</a></li>
+  <li><a href="aeroport_malaga.html">Malaga (AGP)</a></li>
+  <li><a href="aeroport_bilbao.html">Bilbao (BIO)</a></li>
+  <li><a href="aeroport_sevilla.html">Sevilla (SVQ)</a></li>
+  <li><a href="aeroport_palma.html">Palma Mallorca (PMI)</a></li>
+</ul>
+
+<img src="../images/image_spania.png" class="harta" usemap="#es-map">
+
+<map name="es-map">
+
+<area href="aeroport_madrid.html" coords="644,414,42" shape="circle">
+<area href="aeroport_barcelona.html" coords="948,332,43" shape="circle">
+<area href="aeroport_valencia.html" coords="841,429,40" shape="circle">
+<area href="aeroport_alicante.html" coords="814,562,40" shape="circle">
+<area href="aeroport_malaga.html" coords="649,629,40" shape="circle">
+<area href="aeroport_bilbao.html" coords="716,217,40" shape="circle">
+<area href="aeroport_sevilla.html" coords="499,589,40" shape="circle">
+<area href="aeroport_palma.html" coords="1021,468,44" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+</body>
+</html>
