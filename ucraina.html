@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ucraina - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Ucraina — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="aeroport_kyiv.html">Kyiv (IEV)</a></li>
+  <li><a href="aeroport_lviv.html">Lviv (LWO)</a></li>
+  <li><a href="aeroport_kharkiv.html">Kharkiv (HRK)</a></li>
+  <li><a href="aeroport_dnipro.html">Dnipro (DNK)</a></li>
+  <li><a href="aeroport_odesa.html">Odesa (ODS)</a></li>
+</ul>
+
+<img src="../images/image_ucraina.png" class="harta" usemap="#ua-map">
+
+<map name="ua-map">
+
+<area href="aeroport_lviv.html" coords="330,306,40" shape="circle">
+<area href="aeroport_kyiv.html" coords="671,270,40" shape="circle">
+<area href="aeroport_kharkiv.html" coords="878,306,40" shape="circle">
+<area href="aeroport_dnipro.html" coords="818,445,45" shape="circle">
+<area href="aeroport_odesa.html" coords="658,525,43" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+</body>
+</html>

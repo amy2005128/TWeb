@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ungaria - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Ungaria — Aeroporturi</h1>
+<p>Alege aeroport:</p>
+
+<ul>
+  <li><a href="aeroport_budapesta.html">Budapest (BUD)</a></li>
+  <li><a href="aeroport_debrecen.html">Debrecen (DEB)</a></li>
+  <li><a href="aeroport_gyor.html">Gyor-Per (QGY)</a></li>
+  <li><a href="aeroport_miskolc.html">Miskolc (MCQ)</a></li>
+  <li><a href="aeroport_szeged.html">Szeged (QZD)</a></li>
+  <li><a href="aeroport_pecs.html">Pecs-Pogany (PEV)</a></li>
+  <li><a href="aeroport_heviz.html">Heviz-Balaton (SOB)</a></li>
+</ul>
+
+<img src="../images/image_ungaria.png" class="harta" usemap="#hu-map">
+
+<map name="hu-map">
+
+<area href="aeroport_budapesta.html" coords="665,373,40" shape="circle">
+<area href="aeroport_debrecen.html" coords="969,387,43" shape="circle">
+<area href="aeroport_gyor.html" coords="534,324,40" shape="circle">
+<area href="aeroport_miskolc.html" coords="838,286,40" shape="circle">
+<area href="aeroport_szeged.html" coords="798,555,41" shape="circle">
+<area href="aeroport_pecs.html" coords="564,606,40" shape="circle">
+<area href="aeroport_heviz.html" coords="423,484,40" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+</body>
+</html>
