@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ungaria - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+
+</head>
+
+<body>
+
+<h1>Ungaria — Aeroporturi</h1>
+
+<div class="row">
+
+<ul class="lista">
+<li><a href="aeroport_budapesta.html"><span class="nume"><span class="icon">✈</span> Budapesta</span><span class="cod">BUD</span></a></li>
+<li><a href="aeroport_debrecen.html"><span class="nume"><span class="icon">✈</span> Debrecen</span><span class="cod">DEB</span></a></li>
+<li><a href="aeroport_gyor_per.html"><span class="nume"><span class="icon">✈</span> Győr-Pér</span><span class="cod">QGY</span></a></li>
+<li><a href="aeroport_miskolc.html"><span class="nume"><span class="icon">✈</span> Miskolc</span><span class="cod">MCQ</span></a></li>
+<li><a href="aeroport_szeged.html"><span class="nume"><span class="icon">✈</span> Szeged</span><span class="cod">QZD</span></a></li>
+<li><a href="aeroport_pecs.html"><span class="nume"><span class="icon">✈</span> Pécs-Pogány</span><span class="cod">PEV</span></a></li>
+<li><a href="aeroport_heviz.html"><span class="nume"><span class="icon">✈</span> Hévíz-Balaton</span><span class="cod">SOB</span></a></li>
+
+</ul>
+
+<img src="../images/image_ungaria.png" class="harta" usemap="#hu-map">
+
+</div>
+
+<map name="hu-map">
+
+<area href="aeroport_budapesta.html" coords="665,373,40" shape="circle">
+<area href="aeroport_debrecen.html" coords="969,387,43" shape="circle">
+<area href="aeroport_gyor_per.html" coords="534,324,40" shape="circle">
+<area href="aeroport_miskolc.html" coords="838,286,40" shape="circle">
+<area href="aeroport_szeged.html" coords="798,555,41" shape="circle">
+<area href="aeroport_pecs.html" coords="564,606,40" shape="circle">
+<area href="aeroport_heviz.html" coords="423,484,40" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+<script src="../aeroporturi.js"></script>
+
+</body>
+</html>
