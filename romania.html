@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>România - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial;
+  margin:20px;
+}
+
+.harta{
+  width:600px;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>România — Aeroporturi</h1>
+
+<div class="row">
+<ul class="lista">
+
+<li>
+<a href="aeroport_otopeni.html">
+<span class="nume">
+<span class="icon">✈</span> București
+</span>
+<span class="cod">OTP</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_cluj.html">
+<span class="nume">
+<span class="icon">✈</span> Cluj
+</span>
+<span class="cod">CLJ</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_timisoara.html">
+<span class="nume">
+<span class="icon">✈</span> Timișoara
+</span>
+<span class="cod">TSR</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_iasi.html">
+<span class="nume">
+<span class="icon">✈</span> Iași
+</span>
+<span class="cod">IAS</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_sibiu.html">
+<span class="nume">
+<span class="icon">✈</span> Sibiu
+</span>
+<span class="cod">SBZ</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_craiova.html">
+<span class="nume">
+<span class="icon">✈</span> Craiova
+</span>
+<span class="cod">CRA</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_suceava.html">
+<span class="nume">
+<span class="icon">✈</span> Suceava
+</span>
+<span class="cod">SCV</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_bacau.html">
+<span class="nume">
+<span class="icon">✈</span> Bacău
+</span>
+<span class="cod">BCM</span>
+</a>
+</li>
+
+<li>
+<a href="aeroport_brasov.html">
+<span class="nume">
+<span class="icon">✈</span> Brașov
+</span>
+<span class="cod">GHV</span>
+</a>
+</li>
+
+</ul>
+
+<img src="../images/image_romania.png" class="harta" usemap="#ro-map">
+</div>
+
+<map name="ro-map">
+
+<area href="aeroport_otopeni.html" coords="764,583,41" shape="circle">
+<area href="aeroport_cluj.html" coords="508,299,41" shape="circle">
+<area href="aeroport_iasi.html" coords="885,254,41" shape="circle">
+<area href="aeroport_timisoara.html" coords="263,416,40" shape="circle">
+<area href="aeroport_sibiu.html" coords="519,450,42" shape="circle">
+<area href="aeroport_craiova.html" coords="517,622,40" shape="circle">
+<area href="aeroport_suceava.html" coords="749,186,40" shape="circle">
+<area href="aeroport_bacau.html" coords="787,350,39" shape="circle">
+<area href="aeroport_brasov.html" coords="643,503,43" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+imageMapResize();
+</script>
+
+<script src="../aeroporturi.js"></script>
+
+</body>
+</html>

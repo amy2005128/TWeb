@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Germania - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;    
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>Germania — Aeroporturi</h1>
+
+<div class="row">
+<ul class="lista">
+
+<li>
+<a href="./aeroport_frankfurt.html">
+<span class="nume">
+<span class="icon">✈</span> Frankfurt
+</span>
+<span class="cod">FRA</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_munchen.html">
+<span class="nume">
+<span class="icon">✈</span> Munchen
+</span>
+<span class="cod">MUC</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_berlin.html">
+<span class="nume">
+<span class="icon">✈</span> Berlin
+</span>
+<span class="cod">BER</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_dusseldorf.html">
+<span class="nume">
+<span class="icon">✈</span> Düsseldorf
+</span>
+<span class="cod">DUS</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_hamburg.html">
+<span class="nume">
+<span class="icon">✈</span> Hamburg
+</span>
+<span class="cod">HAM</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_koln.html">
+<span class="nume">
+<span class="icon">✈</span> Köln/Bonn
+</span>
+<span class="cod">CGN</span>
+</a>
+</li>
+
+</ul>
+
+<img src="../images/image_germania.png" class="harta" usemap="#germania-map" alt="Harta Germania">
+</div>
+
+<map name="germania-map" id="map">
+
+<area alt="Frankfurt" title="Frankfurt"
+href="./aeroport_frankfurt.html"
+coords="617,619,40" shape="circle">
+
+<area alt="Munchen" title="Munchen"
+href="./aeroport_munchen.html"
+coords="855,739,40" shape="circle">
+
+<area alt="Berlin" title="Berlin"
+href="./aeroport_berlin.html"
+coords="920,308,40" shape="circle">
+
+<area alt="Dusseldorf" title="Dusseldorf"
+href="./aeroport_dusseldorf.html"
+coords="488,407,39" shape="circle">
+
+<area alt="Hamburg" title="Hamburg"
+href="./aeroport_hamburg.html"
+coords="711,228,44" shape="circle">
+
+<area alt="Koln/Bonn" title="Koln/Bonn"
+href="./aeroport_koln.html"
+coords="558,453,41" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+<script src="../aeroporturi.js"></script>
+
+</body>
+</html>

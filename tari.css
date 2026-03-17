@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Exo 2', sans-serif;
+  padding: 30px;
+  color: #0f172a;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+    url("images/image_sky2.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Titluri */
+h1{
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.sub{
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #475569;
+}
+
+h2{
+  font-size: 34px;
+  font-weight: 900;
+  margin: 50px 0 20px;
+}
+
+/* Layout stânga-dreapta */
+.layout{
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Lista */
+.lista{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 300px;
+  flex: 0 0 300px;
+}
+
+/* LINK BUTON */
+.lista a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  text-decoration:none;
+  color:#0f172a;
+  font-weight:800;
+  font-size:18px;
+  padding:16px 18px;
+  border-radius:16px;
+  background:white;
+  border:1px solid rgba(15,23,42,0.08);
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:0.2s ease;
+
+  position:relative;    
+  overflow:hidden;       
+}
+
+/* LINIE NEON */
+.lista a::after{
+  content:"";
+  position:absolute;
+  left:-40%;
+  top:0;
+  height:100%;
+  width:40%;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(56,189,248,.55), 
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition:left .35s ease;
+}
+
+/* HOVER */
+.lista a:hover::after{
+  left:110%;
+}
+
+.lista a:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.nume{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #e0f2fe;
+  font-size: 16px;
+}
+
+.cod{
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .7px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #dbeafe;
+  border: 1px solid #bfdbfe;
+}
+
+/* Harta */
+.card-map{
+  flex: 1;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.harta{
+  width: 100%;
+  max-width: none;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1000px){
+  .layout{
+    flex-direction: column;
+  }
+
+  .lista{
+    width: 100%;
+    flex: auto;
+  }
+
+  .card-map{
+    width: 100%;
+  }
+}

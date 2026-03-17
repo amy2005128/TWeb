@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franța - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;      
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>Franța — Aeroporturi</h1>
+
+<div class="row">
+<ul class="lista">
+
+<li>
+<a href="./aeroport_paris_orly.html">
+<span class="nume">
+<span class="icon">✈</span> Paris Orly
+</span>
+<span class="cod">ORY</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_nice.html">
+<span class="nume">
+<span class="icon">✈</span> Nice
+</span>
+<span class="cod">NCE</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_lyon.html">
+<span class="nume">
+<span class="icon">✈</span> Lyon
+</span>
+<span class="cod">LYS</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_marseille.html">
+<span class="nume">
+<span class="icon">✈</span> Marseille
+</span>
+<span class="cod">MRS</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_toulouse.html">
+<span class="nume">
+<span class="icon">✈</span> Toulouse
+</span>
+<span class="cod">TLS</span>
+</a>
+</li>
+
+<li>
+<a href="./aeroport_bordeaux.html">
+<span class="nume">
+<span class="icon">✈</span> Bordeaux
+</span>
+<span class="cod">BOD</span>
+</a>
+</li>
+
+</ul>
+
+<img src="../images/image_franta.png" class="harta" usemap="#franta-map" alt="Harta Franța">
+</div>
+
+<map name="franta-map" id="map">
+
+<area alt="Paris Orly" title="Paris Orly"
+href="./aeroport_paris_orly.html"
+coords="605,242,46" shape="circle">
+
+<area alt="Nice" title="Nice"
+href="./aeroport_nice.html"
+coords="917,565,40" shape="circle">
+
+<area alt="Lyon" title="Lyon"
+href="./aeroport_lyon.html"
+coords="789,434,42" shape="circle">
+
+<area alt="Marseille" title="Marseille"
+href="./aeroport_marseille.html"
+coords="802,601,40" shape="circle">
+
+<area alt="Toulouse" title="Toulouse"
+href="./aeroport_toulouse.html"
+coords="630,598,44" shape="circle">
+
+<area alt="Bordeaux" title="Bordeaux"
+href="./aeroport_bordeaux.html"
+coords="505,487,43" shape="circle">
+
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+<script src="../aeroporturi.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belgia - Aeroporturi</title>
+
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
+
+.harta{
+  width:600px;     
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../aeroporturi.css">
+</head>
+
+<body>
+
+<h1>Belgia — Aeroporturi</h1>
+
+<div class="row">
+<ul class="lista">
+<li><a href="./aeroport_bruxelles.html"><span class="nume"><span class="icon">✈</span> Brussels</span><span class="cod">BRU</span></a></li>
+<li><a href="./aeroport_charleroi.html"><span class="nume"><span class="icon">✈</span> Charleroi</span><span class="cod">CRL</span></a></li>
+<li><a href="./aeroport_antwerp.html"><span class="nume"><span class="icon">✈</span> Antwerp</span><span class="cod">ANR</span></a></li>
+<li><a href="./aeroport_liege.html"><span class="nume"><span class="icon">✈</span> Liège</span><span class="cod">LGG</span></a></li>
+</ul>
+
+<img src="../images/image_belgia.png" class="harta" usemap="#belgia-map" alt="Harta Belgia">
+</div>
+
+<map name="belgia-map" id="map">
+  <area alt="Brussels" title="Brussels"
+  href="./aeroport_bruxelles.html"
+  coords="787,397,44" shape="circle">
+
+  <area alt="Charleroi" title="Charleroi"
+  href="./aeroport_charleroi.html"
+  coords="881,557,42" shape="circle">
+
+  <area alt="Antwerp" title="Antwerp"
+  href="./aeroport_antwerp.html"
+  coords="771,231,41" shape="circle">
+
+  <area alt="Liege" title="Liege"
+  href="./aeroport_liege.html"
+  coords="987,398,41" shape="circle">
+</map>
+
+<br><br>
+<a href="../index.html" class="btn-back">Înapoi la țări</a>
+
+<script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  imageMapResize(document.getElementById('map'));
+});
+</script>
+
+<script src="../aeroporturi.js"></script>
+
+</body>
+</html>
