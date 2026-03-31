@@ -1,0 +1,447 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Exo 2', sans-serif;
+  padding:30px;
+  color:#0f172a;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+    url("../images/image_sky2.png");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+h1{
+  font-size:42px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+h2{
+  font-size:22px;
+  font-weight:900;
+  margin:30px 0 12px;
+  color:#1e3a5f;
+}
+
+/* ===== TABEL → CARDURI ZBORURI ===== */
+table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  margin-bottom:10px;
+  background:transparent;
+  box-shadow:none;
+  border:none;
+}
+
+thead tr{
+  display:none;
+}
+
+/* Fiecare rând = card */
+tbody tr{
+  background:white;
+  border-radius:16px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.07);
+  border:1px solid rgba(15,23,42,0.08);
+  cursor:pointer;
+  transition:box-shadow .2s, transform .15s;
+  display:flex;
+  align-items:stretch;
+  overflow:hidden;
+  margin-bottom:10px;
+}
+
+tbody tr:hover{
+  box-shadow:0 6px 28px rgba(37,99,235,0.14);
+  transform:translateY(-1px);
+}
+
+tbody tr td{
+  border:none;
+  padding:16px 14px;
+  background:transparent;
+  display:flex;
+  align-items:center;
+  font-size:14px;
+}
+
+/* Col 1: dată */
+tbody tr td:nth-child(1){
+  min-width:96px;
+  font-weight:700;
+  font-size:12px;
+  color:#64748b;
+  border-right:1px solid #f1f5f9;
+  padding-left:18px;
+  flex-shrink:0;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  gap:2px;
+}
+
+/* Col 2: decolare */
+tbody tr td:nth-child(2){
+  font-size:22px;
+  font-weight:900;
+  color:#0f172a;
+  min-width:72px;
+  flex-shrink:0;
+  justify-content:center;
+}
+
+/* Arrow between times */
+tbody tr td:nth-child(2)::after{
+  content:" ——→";
+  font-size:13px;
+  color:#94a3b8;
+  font-weight:400;
+  margin-left:10px;
+}
+
+/* Col 3: aterizare */
+tbody tr td:nth-child(3){
+  font-size:22px;
+  font-weight:900;
+  color:#0f172a;
+  min-width:72px;
+  flex-shrink:0;
+}
+
+/* Col 4: agenție */
+tbody tr td:nth-child(4){
+  flex:1;
+  font-size:13px;
+  font-weight:700;
+  color:#475569;
+  gap:8px;
+  padding-left:18px;
+}
+
+/* Col 5: preț + butoane */
+tbody tr td:nth-child(5){
+  min-width:220px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  padding-right:16px;
+  flex-shrink:0;
+  background:transparent;
+  border-left:1px solid #f1f5f9;
+}
+
+/* Stilizare preț */
+.flx-price-text{
+  font-size:24px;
+  font-weight:900;
+  color:#0f172a;
+}
+.flx-price-label{
+  font-size:11px;
+  color:#94a3b8;
+  font-weight:600;
+  display:block;
+  text-align:right;
+}
+
+/* Buton Rezervează */
+.flx-rezerva-btn{
+  background:linear-gradient(135deg,#f97316,#ea580c);
+  color:white;
+  border:none;
+  border-radius:10px;
+  padding:10px 18px;
+  font-family:inherit;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  white-space:nowrap;
+  box-shadow:0 4px 14px rgba(234,88,12,0.30);
+  transition:all .2s;
+  flex-shrink:0;
+}
+.flx-rezerva-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 6px 20px rgba(234,88,12,0.45);
+}
+
+/* Stelele ☆ ♡ */
+.flx-fav-star, .flx-watch-star {
+  background:transparent; border:none; box-shadow:none; outline:none;
+  appearance:none; -webkit-appearance:none;
+  font-size:19px; cursor:pointer; padding:0 2px; line-height:1;
+  transition:transform .2s; flex-shrink:0;
+  display:inline-flex; align-items:center; justify-content:center; min-width:24px;
+}
+.flx-fav-star:hover, .flx-watch-star:hover { transform:scale(1.28); }
+
+/* ===== BUTOANE ÎNAPOI ===== */
+.back-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0 10px;
+}
+
+a, .btn-back, .btn-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  box-shadow: 0 10px 25px rgba(37,99,235,0.30);
+  transition: all .25s ease;
+}
+
+a:hover, .btn-back:hover, .btn-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(37,99,235,0.40);
+}
+
+#back-home,
+#back-to-airports {
+  position: static !important;
+  display: inline-block !important;
+  margin-top: 0;
+}
+
+/* ===== RECENZII ===== */
+#reviews-root{
+  max-width:900px;
+  margin:40px auto 60px;
+  padding:0 16px;
+}
+
+.flx-reviews-box{
+  background:rgba(255,255,255,0.97);
+  border-radius:20px;
+  padding:28px 28px 24px;
+  box-shadow:0 8px 32px rgba(15,23,42,.08);
+  border:1px solid rgba(15,23,42,.07);
+}
+
+.flx-reviews-box h2{
+  font-size:22px;
+  margin:0 0 6px;
+  color:#0f172a;
+}
+
+.flx-reviews-sub{
+  margin:0 0 20px;
+  color:#64748b;
+  font-size:14px;
+}
+
+.flx-review-top{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+  padding-bottom:16px;
+  border-bottom:1px solid #f1f5f9;
+}
+
+.flx-review-filter label,
+.flx-review-form label{
+  display:block;
+  margin-bottom:5px;
+  font-weight:700;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.4px;
+  color:#64748b;
+}
+
+.flx-review-filter select,
+.flx-review-form input,
+.flx-review-form select,
+.flx-review-form textarea{
+  width:100%;
+  border:1.5px solid #e2e8f0;
+  border-radius:10px;
+  padding:10px 13px;
+  font:inherit;
+  font-size:14px;
+  background:#fff;
+  outline:none;
+  transition:border-color .2s;
+}
+
+.flx-review-filter select:focus,
+.flx-review-form input:focus,
+.flx-review-form textarea:focus {
+  border-color:#2563eb;
+}
+
+.flx-review-avg{
+  font-weight:800;
+  color:#0f172a;
+  font-size:14px;
+  background:#f8faff;
+  padding:8px 14px;
+  border-radius:10px;
+  border:1px solid #e2e8f0;
+}
+
+.flx-review-list{
+  display:grid;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.flx-review-item{
+  border:1px solid #e8edf5;
+  border-radius:12px;
+  padding:13px 15px;
+  background:#fafcff;
+  transition:box-shadow .2s;
+}
+
+.flx-review-item:hover {
+  box-shadow:0 3px 12px rgba(37,99,235,.08);
+}
+
+.flx-review-item-top{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  margin-bottom:4px;
+}
+
+.flx-review-item-top strong {
+  font-size:13px;
+  color:#0f172a;
+}
+
+.flx-review-stars{
+  font-weight:800;
+  color:#f59e0b;
+  font-size:13px;
+  letter-spacing:1px;
+}
+
+.flx-review-item-company{
+  font-size:11px;
+  color:#94a3b8;
+  margin-bottom:6px;
+  font-weight:600;
+}
+
+.flx-review-item-comment{
+  color:#334155;
+  font-size:13px;
+  line-height:1.5;
+  margin-bottom:6px;
+}
+
+.flx-review-item-date{
+  font-size:11px;
+  color:#94a3b8;
+}
+
+.flx-review-empty{
+  padding:20px;
+  text-align:center;
+  color:#94a3b8;
+  font-size:13px;
+  border:1.5px dashed #e2e8f0;
+  border-radius:12px;
+}
+
+.flx-review-form{
+  border-top:1px solid #f1f5f9;
+  padding-top:18px;
+  margin-top:4px;
+}
+
+.flx-review-form h3{
+  margin:0 0 14px;
+  font-size:16px;
+}
+
+.flx-review-grid{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:14px;
+  margin-bottom:14px;
+  align-items:start;
+}
+
+.flx-review-form textarea{
+  resize:vertical;
+  min-height:90px;
+}
+
+.flx-review-btn{
+  margin-top:12px;
+  border:none;
+  border-radius:10px;
+  padding:10px 20px;
+  font-weight:800;
+  font-size:14px;
+  cursor:pointer;
+  background:linear-gradient(135deg,#2563eb,#1d4ed8);
+  color:#fff;
+  transition:all .2s;
+  box-shadow:0 4px 14px rgba(37,99,235,.25);
+}
+
+.flx-review-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 6px 20px rgba(37,99,235,.35);
+}
+
+@media (max-width: 700px){
+  .flx-review-grid{
+    grid-template-columns:1fr;
+  }
+  tbody tr{
+    flex-wrap:wrap;
+  }
+  tbody tr td:nth-child(5){
+    flex:1 1 100%;
+    justify-content:space-between;
+    border-top:1px solid #f1f5f9;
+    border-left:none;
+  }
+  tbody tr td:nth-child(2)::after{
+    display:none;
+  }
+}
+
+.flx-stars-input{
+  display:flex;
+  gap:3px;
+  font-size:26px;
+  cursor:pointer;
+  user-select:none;
+  line-height:1;
+  padding-top:2px;
+}
+
+.flx-stars-input span{
+  color:#f59e0b;
+  transition:transform .2s ease, opacity .2s ease;
+}
+
+.flx-stars-input span:hover{
+  transform:scale(1.15);
+}
+
+#watch-root,
+#ticket-root{
+  display:none;
+}
