@@ -1,0 +1,29 @@
+[
+    {
+        "nr_bilet": "BLDAD9F222",
+        "flight_id": "zbor_06_03_2026_09_20__KLV__13_05__IST__Turkish_Airlines_Turcia",
+        "dest": "Turcia",
+        "date": "06.03.2026",
+        "dep": "09:20 (KLV)",
+        "arr": "13:05 (IST)",
+        "agency": "Turkish Airlines",
+        "seat": "3C",
+        "seat_class": "Business",
+        "bagaj": "nk",
+        "bagaj_label": "Doar ghiozdan (bagaj mic de mână)",
+        "pasager_prenume": "I",
+        "pasager_nume": "P",
+        "idnp": "2004500684517",
+        "datan": "2005-04-16",
+        "sex": "M",
+        "pasaport": "AE084517",
+        "email": "ip@gmail.com",
+        "tel": "+373 68612558",
+        "from_city": "Aeroport Karlovy Vary",
+        "base_price": "155",
+        "extra_bagaj": "0",
+        "extra_seat": "80",
+        "total_price": "€235",
+        "purchased_at": "2026-04-28T06:03:25+00:00"
+    }
+]
